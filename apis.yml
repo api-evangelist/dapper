@@ -1,23 +1,66 @@
 aid: dapper
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dapper.png
 name: Dapper
-description: 'Dapper is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: media. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Dapper was an advertising-technology and web-data company founded in 2006 by Jonathan Aizen
+  and Eran Shir, seed-funded by Accel. It ran two surfaces: Dapper Ads, an intent-driven dynamic-ad product
+  that pulled live product and inventory data from an advertiser''s own site into targeted creative without
+  IT integration; and open.dapper.net (the "Dapp Factory" / Dapper: The Data Mapper), a hosted tool that
+  turned any web page into structured feeds, web services and widgets — XML, RSS, JSON, YAML, CSV, iCalendar,
+  Google Gadgets, Netvibes modules and image loops — effectively letting anyone "create an API for any site"
+  before providers published their own. Dapper was acquired by Yahoo! in 2010 and both surfaces were shut
+  down; dapper.net now resolves to Yahoo nameservers with no host, and open.dapper.net no longer resolves.
+  There is no live API, developer portal, or documentation to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/dapper/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - accel
+x-status: defunct
+x-acquired-by: Yahoo!
+x-acquired-year: 2010
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Media
+- Advertising
+- AdTech
+- Web Scraping
+- Data Extraction
+- Mashups
+- Defunct
+- Acquired
 apis: []
+common:
+- type: InvestorProfile
+  name: Accel portfolio profile
+  url: https://www.accel.com/companies/dapper
+- type: Archive
+  name: dapper.net (archived 2010, site no longer live)
+  url: https://web.archive.org/web/20100601000000/http://www.dapper.net/
+- type: Archive
+  name: open.dapper.net Dapp Factory (archived 2010, no longer live)
+  url: https://web.archive.org/web/20100601000000/http://open.dapper.net/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
